@@ -18,6 +18,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   //para volver a restringir ejecutamos
   //Set-ExecutionPolicy Restricted
 
+  //TEST:
+  //para los prop-types
+  //npm install prop-types
+
   <React.StrictMode>
     <GifExpertApp/>
   </React.StrictMode>,
