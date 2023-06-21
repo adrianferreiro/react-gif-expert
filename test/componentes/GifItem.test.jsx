@@ -17,7 +17,7 @@ describe('Pruebas en <GifItem />', () => {
     test('debe de mostrar la imagen con el URL y el ALT indicado', () => {
         //no pude pasar éste test
         // render( <GifItem title={ title } url={ url } /> );
-        // //screen.debug();
+        // // //screen.debug();
         // expect( screen.getByRole('img').src ).toBe( url );
         
     });
