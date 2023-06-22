@@ -1,6 +1,7 @@
 
 import { GifItem } from "./GifItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
+import PropTypes from 'prop-types';
 
 export const GifGrid =  ({category}) => {
   //useEffect:
@@ -9,6 +10,8 @@ export const GifGrid =  ({category}) => {
 
   //customHook
   const {images, isLoading} = useFetchGifs(category);
+  //tener en cuenta para los tests
+  //1- cuando el componente es mostrado por primera vez se dispara el hook
   
   return (
   <>
@@ -36,4 +39,9 @@ export const GifGrid =  ({category}) => {
       </div>
   </>
   )
+}
+
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired,
+
 }
