@@ -21,3 +21,4 @@ export const useFetchGifs = (category) => {
         isLoading: isLoading,
     }
 }
+//para testear los hooks evaluamos los argumentos de entrada y la salida
